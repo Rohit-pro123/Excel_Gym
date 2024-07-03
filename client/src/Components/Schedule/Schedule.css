@@ -1,0 +1,95 @@
+main * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.classtime th {
+    height: 18px;
+    border-right: 1px solid #363636;
+}
+
+.classtime td {
+    width: 70px;
+    height: 50px;
+}
+
+.classtime {
+    margin: 0 auto;
+    padding: 15px 10px;
+    max-width: 900px;
+}
+
+h4 {
+    color: #393838;
+    font-size: 22px;
+    font-family: desporm;
+    padding: 0 12px;
+}
+
+.classtime table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: center;
+    height: 460px;
+    border: 2px solid blanchedalmond;
+    position: relative;
+    margin: 0 20px;
+}
+
+.classtime td:nth-child(1) {
+    font-size: 14px;
+    color: #f36100;
+    background: #000000;
+    border: 1px solid #363636;
+    padding: 0 12px;
+}
+
+.classtime tr:nth-child(even) td:nth-child(even),
+.classtime tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #121212;
+}
+
+.classtime tr:nth-child(odd) td:nth-child(even),
+.classtime tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(37, 40, 43);
+}
+
+.classtime thead {
+    font-size: 18px;
+    color: #ffffff;
+    background: #f36100;
+    padding: 15px 0;
+    font-weight: 400;
+}
+.classtime>h4 {
+    font-family: sharpshooter;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.classtime>div{
+    width: 100%;
+}
+
+@media only screen and (max-width: 940px) {
+    .classtime>div{
+        overflow-x: auto;
+    }
+    .classtime table{
+        margin: 0;
+    }
+    .classtime>h4 {
+        text-align: center;
+    }
+}
+
+
+
+tr td:hover h4 {
+    transition: 0.8s color;
+    color: #ffffff;
+    text-shadow: #ffffff;
+    font-weight: 900;
+}

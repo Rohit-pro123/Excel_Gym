@@ -1,0 +1,353 @@
+.mainscreen {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dashboard {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'sharpshooter', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+.dashboard>div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.memberdetails,
+.bookingdetails {
+    background-color: orange;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.memberdetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.memberdetails>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberdetails h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.memberdetails button {
+    color: red;
+    border-color: red;
+    border-radius: 10px;
+    background-color: rgb(37, 40, 43);
+    border-width: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.memberdetails button:hover {
+    color: white;
+    border-color: white;
+    background-color: red;
+}
+
+.memberdetails>table {
+    color: white;
+    width: 100%;
+    flex-grow: 1;
+    padding-left: 12px;
+}
+
+.adminsidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.adminsidebar li {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.adminsidebar li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.adminsidebar li a:hover {
+    color: orange;
+}
+
+.adminmain {
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.addnew form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 12px 20px;
+}
+
+.addnew h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.adminmain .genderinput {
+    color: white;
+}
+
+.addnew button {
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.adminselecttrainers {
+    background-color: rgba(82, 81, 81, 0.4);
+    height: 24px;
+    border: 2px solid black;
+    border-bottom-width: 2px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    color: lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-width: 3px;
+}
+
+.infoadmin {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    color: #000000;
+    background-color: rgb(82, 81, 81);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+}
+
+.infoadmin i {
+    color: black;
+    height: 100%;
+    display: block;
+    font-size: 4rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tableslist {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    overflow: auto;
+}
+
+.tableslist>table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+.tableslist th {
+    background-color: orange;
+}
+
+.tableslist tr:nth-child(even) {
+    background-color: #121212;
+}
+
+.tableslist tr:nth-child(odd) {
+    background-color: rgb(37, 40, 43);
+}
+
+.tableslist td {
+    border: 1px solid white;
+}
+
+.tableslist button {
+    color: red;
+    border-color: red;
+    margin: 4px 0;
+    border-radius: 5px;
+    background-color: rgb(37, 40, 43);
+    cursor: pointer;
+}
+
+.search {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.search button {
+    color: white;
+    background-color: orange;
+    border-radius: 6px;
+    border: 1px white solid;
+    cursor: pointer;
+    padding: 4px;
+}
+
+@media screen and (max-width:992px) {
+
+    .menulogo,
+    .togglemenu {
+        display: block;
+    }
+
+    .adminsidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        background-color: rgb(82, 81, 81);
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        padding: 0;
+        transition: left 0.5s ease;
+        height: 90%;
+    }
+
+    .adminsidebar li {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .adminsidebar li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+        border-radius: 0px;
+    }
+
+    #togglemenu:checked~.dashboard .adminsidebar {
+        left: 0;
+    }
+
+    .infoadmin {
+        overflow-y: auto;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        color: #000000;
+        background-color: rgb(82, 81, 81);
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+        text-align: center;
+        font-size: 24px;
+        height: auto;
+    }
+
+    .infoadmin i {
+        color: black;
+        height: 100%;
+        display: block;
+        font-size: 3rem;
+    }
+
+    .card {
+        display: block;
+        background-color: orange;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .adminmain {
+        margin: 10px 0;
+    }
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    background-color: orange;
+    border-radius: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.gotopsym {
+    width: 32px;
+    height: 32px;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    transform-origin: top left;
+    transform: rotate(45deg) translate(90%, -30%);
+}

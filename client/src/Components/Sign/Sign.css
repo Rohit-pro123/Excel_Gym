@@ -1,0 +1,168 @@
+
+.signmain{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url("../img/bck.jpg") no-repeat fixed; */
+    background-size: cover;
+    color: white;
+}
+.loginboxi{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: rgba(82, 81, 81, 0.4);
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid orange;
+}
+.input_boxi
+{
+    margin: 30px 0;
+    width: 100%;
+}
+.input_box input{
+    background-color: rgba(82, 81, 81, 0.4);
+    width: 100%;
+    height: 24px;
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    color: lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-width: 3px;
+}
+.rem{
+    text-align: right;
+}
+.loginboxi a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.loginboxi a:hover{
+    color: orange;
+    text-decoration: none;
+}
+.signmain button {
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.loginboxi button{
+    margin: 24px 0;
+}
+.loginboxu {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    background-color: rgba(82, 81, 81, 0.4);
+    border-radius: 30px;
+    border: 3px solid orange;
+}
+
+.loginboxu form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 12px 20px;
+}
+
+.input_boxu {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.input_box input:focus,
+.input_box input:valid {
+    border-color: orange;
+    color: orange;
+}
+
+.genderinput {
+    width: 80%;
+    margin: 14px 0;
+    text-align: left;
+}
+
+.genderinput div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genderinput label {
+    display: flex;
+    align-items: center;
+}
+
+.gender {
+    display: flex;
+}
+
+.dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 3px solid transparent;
+}
+
+#m:checked~div label .md,
+#f:checked~div label .fd,
+#n:checked~div label .nd {
+    border-color: #d9d9d9;
+    background-color: orange;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+.loginbox button {
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width:584px) {
+    .loginboxu {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .input_box {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+.loginboxi h1,.loginboxu h1{
+    font-size: 2em;
+  text-align: center;
+  width: 100%;
+}

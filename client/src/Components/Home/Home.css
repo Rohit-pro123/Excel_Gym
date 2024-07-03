@@ -1,0 +1,201 @@
+.upper1 {
+    background: url('../img/lambiphoto.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.upper2 {
+    background: url('../img/foot.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.upper1>div,
+.upper2>div {
+    display: flex;
+    align-items: center;
+}
+.upper1>div>div,
+.upper2>div>div {
+    border-radius: 10px;
+    background-color: rgba(35, 34, 34, 0.76);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding: 46px;
+}
+
+
+.upper1 *,
+.upper2 * {
+    font-family: desporm;
+}
+
+.rate {
+    color: orange;
+}
+
+main>h1 {
+    font-family: desporm;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.me {
+    font-size: 100px;
+}
+
+.me:hover {
+    color: rgb(22, 174, 245);
+}
+
+.push {
+    color: orange;
+}
+
+.push:hover {
+    color: deepskyblue;
+}
+
+.choose {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: desporm;
+    font-size: 30px;
+    color: rgb(201, 236, 4);
+    margin: 0 2em;
+    line-height: 42px;
+}
+
+.choose img {
+    width: 100px;
+    height: 100px;
+}
+
+main h2 {
+    font-family: desporm;
+}
+
+.plan {
+    margin: 0 8em;
+    color: #fff;
+    display: flex;
+    font-family: desporm;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.plan img {
+    width: 100px;
+    height: 100px;
+}
+
+.plan h2 {
+    font-size: 50px;
+}
+
+.plan p {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .ladkamatter,
+    .shape,
+    main a {
+        line-height: 0.2rem;
+        font-size: 20px;
+    }
+
+    .shape {
+        top: 0;
+    }
+
+    .me {
+        font-size: 70px;
+    }
+
+    .ladkamatter>h1 {
+        font-size: 14px;
+        top: 10%;
+    }
+
+    .ladkamatter:hover h1 {
+        right: 13px;
+    }
+
+    main a {
+        top: 40%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .ladkamatter,
+    .shape,
+    main a {
+        line-height: 0.2rem;
+        font-size: 20px;
+    }
+
+    .shape {
+        top: 0;
+    }
+
+    .me {
+        font-size: 70px;
+    }
+
+    .ladkamatter>h1 {
+        font-size: 24px;
+    }
+
+    main a {
+        top: 40%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .choose,
+    .plan {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .choose h2,
+    .plan h2 {
+        margin: 10px 0;
+    }
+
+    .choose p,
+    .plan p {
+        margin: 6px 0;
+    }
+
+    .me {
+        font-size: 76px;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+
+
+}

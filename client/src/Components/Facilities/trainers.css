@@ -1,0 +1,48 @@
+.trainerslayout{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+}
+.cards{
+    flex-basis: 23%;
+    margin: 10px 0;
+    background-color: orange;
+    border-radius: 10px;
+}
+.cards img{
+    width: 86%;
+    padding: 20px;
+}
+.cards h5{
+    text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  margin: 0;
+  text-transform: capitalize;
+}
+@media screen and (max-width:982px) {
+    .cards{
+        flex-basis: 46%;
+        margin: 10px 0;
+        background-color: orange;
+        border-radius: 10px;
+    }
+    .cards img{
+        width: 86%;
+        padding: 16px;
+    }
+}
+@media screen and (max-width:492px) {
+    .cards{
+        flex-basis: 80%;
+        margin: 10px 0;
+        background-color: orange;
+        border-radius: 10px;
+    }
+    .cards img{
+        width: 86%;
+        padding: 10px;
+    }
+}
